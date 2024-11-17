@@ -1,8 +1,14 @@
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
-header{
+
+body,
+html {
+    width: 100%
+}
+
+header {
     background-color: lightblue;
     position: sticky;
     top: 0;
@@ -14,77 +20,115 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.logo{
+
+.logo {
     font-size: 30px;
     color: black;
 }
-.logo span{
+
+.logo span {
     color: red;
 }
-.navigation a{
+
+.navigation a {
     font-size: 16px;
     color: black;
     text-decoration: none;
     margin-right: 40px;
 }
-.navigation a:hover{
+
+.navigation a:hover {
     color: blue;
     background-color: orange;
     font-size: 19px;
 }
-.btn{
+
+.btn {
     text-decoration: none;
     color: white;
     background-color: blue;
-   padding: 8px 35px;
-   border-radius: 10px;
+    padding: 8px 35px;
+    border-radius: 10px;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: white;
     color: blue;
-    border:2px solid blue;
+    border: 2px solid blue;
 }
-.main-content{
+
+.main-content {
     position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding:30px 100px;
+    align-items: center;
+    justify-content: space-around;
 
 }
-.main-content h2{
+
+.main-content h2 {
     font-size: 48px;
 }
-.main-content span{
+
+.main-content span {
     color: blue;
     margin-left: 10px;
 }
-.main-content h4{
+
+.main-content h4 {
     font-size: 25px;
 }
-.main-content p{
+
+.main-content p {
     padding: 10px 0 30px 0;
 }
-.button-group a{
+
+.button-group a {
     color: blue;
     text-align: none;
-    padding:10px 40px;
+    padding: 10px 40px;
     background-color: white;
     border: 1px solid blue;
-    border-radius: 10px;  
-    text-decoration: none;  
+    border-radius: 10px;
+    text-decoration: none;
 }
-.button-group .blue-button{
-color: white;
-background-color: blue;
+
+.button-group .blue-button {
+    color: white;
+    background-color: blue;
 }
-.button-group .blue-button:hover{color: blue;
-background-color:white;}
-.button-group .white-button{color: blue;
-background-color: white;
-margin-left: 30px;
+
+.button-group .blue-button:hover {
+    color: blue;
+    background-color: white;
 }
-.button-group .white-button:hover{color: white;
-background-color: blue;}
+
+.button-group .white-button {
+    color: blue;
+    background-color: white;
+    margin-left: 30px;
+}
+
+.button-group .white-button:hover {
+    color: white;
+    background-color: blue;
+}
+
+.profile-photo {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.profile-info {
+    max-width: 500px;
+}
